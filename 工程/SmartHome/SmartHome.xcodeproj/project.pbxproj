@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33EFDF11C48E00E000FACB0 /* SmartLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */; };
+		D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF31C48E678000FACB0 /* LoginViewController.m */; };
 		D3FBA3EB1C46524A000ECF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3EA1C46524A000ECF85 /* main.m */; };
 		D3FBA3EE1C46524A000ECF85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */; };
-		D3FBA3F11C46524A000ECF85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3F01C46524A000ECF85 /* ViewController.m */; };
 		D3FBA3F41C46524A000ECF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FBA3F21C46524A000ECF85 /* Main.storyboard */; };
 		D3FBA3F61C46524A000ECF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3FBA3F51C46524A000ECF85 /* Assets.xcassets */; };
 		D3FBA3F91C46524A000ECF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FBA3F71C46524A000ECF85 /* LaunchScreen.storyboard */; };
@@ -17,12 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D33EFDEF1C48E00E000FACB0 /* SmartLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartLinkViewController.h; sourceTree = "<group>"; };
+		D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartLinkViewController.m; sourceTree = "<group>"; };
+		D33EFDF21C48E678000FACB0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D33EFDF31C48E678000FACB0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D3FBA3E61C46524A000ECF85 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FBA3EA1C46524A000ECF85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D3FBA3EF1C46524A000ECF85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D3FBA3F01C46524A000ECF85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D3FBA3F31C46524A000ECF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3FBA3F51C46524A000ECF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3FBA3F81C46524A000ECF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D33EFDEE1C48E00E000FACB0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D33EFDEF1C48E00E000FACB0 /* SmartLinkViewController.h */,
+				D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */,
+				D33EFDF21C48E678000FACB0 /* LoginViewController.h */,
+				D33EFDF31C48E678000FACB0 /* LoginViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		D3FBA3DD1C46524A000ECF85 = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +76,13 @@
 			isa = PBXGroup;
 			children = (
 				D3FBA4011C4657EB000ECF85 /* SmartHome-Bridging-Header.h */,
-				D3FBA4001C4657CD000ECF85 /* View */,
-				D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */,
-				D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */,
-				D3FBA3EF1C46524A000ECF85 /* ViewController.h */,
-				D3FBA3F01C46524A000ECF85 /* ViewController.m */,
 				D3FBA3F21C46524A000ECF85 /* Main.storyboard */,
 				D3FBA3F51C46524A000ECF85 /* Assets.xcassets */,
 				D3FBA3F71C46524A000ECF85 /* LaunchScreen.storyboard */,
+				D3FBA4001C4657CD000ECF85 /* View */,
+				D33EFDEE1C48E00E000FACB0 /* ViewController */,
+				D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */,
+				D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */,
 				D3FBA3FA1C46524A000ECF85 /* Info.plist */,
 				D3FBA3E91C46524A000ECF85 /* Supporting Files */,
 			);
@@ -162,10 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3FBA3F11C46524A000ECF85 /* ViewController.m in Sources */,
 				D3FBA4031C4657EB000ECF85 /* LoginButton.swift in Sources */,
+				D33EFDF11C48E00E000FACB0 /* SmartLinkViewController.m in Sources */,
 				D3FBA3EE1C46524A000ECF85 /* AppDelegate.m in Sources */,
 				D3FBA3EB1C46524A000ECF85 /* main.m in Sources */,
+				D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +333,7 @@
 				D3FBA3FF1C46524A000ECF85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
