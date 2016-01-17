@@ -26,6 +26,7 @@
 }
 
 -(IBAction)loginClick:(id)sender{
+    [self performSegueWithIdentifier:@"deviceListIdentifier" sender:nil];
 }
 
 /*
