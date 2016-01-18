@@ -1,27 +1,25 @@
 //
-//  SmartLinkViewController.m
+//  ScanViewController.m
 //  SmartHome
 //
-//  Created by 刘向宏 on 16/1/15.
+//  Created by 刘向宏 on 16/1/18.
 //  Copyright © 2016年 刘向宏. All rights reserved.
 //
 
-#import "SmartLinkViewController.h"
-#import "WIFIUtil.h"
+#import "ScanViewController.h"
 
-@interface SmartLinkViewController ()
-@property (nonatomic,weak) IBOutlet UILabel *label;
-@property (nonatomic,weak) IBOutlet UITextField *textField;
-@property (nonatomic,weak) IBOutlet UISwitch *showSSIDSwitch;
-@property (nonatomic,weak) IBOutlet UIButton *confirmButton;
+@interface ScanViewController ()
+@property (nonatomic,weak) IBOutlet UIButton *scanButton;
+@property (nonatomic,weak) IBOutlet UILabel *idLabel;
+@property (nonatomic,weak) IBOutlet UILabel *passwordLabel;
+@property (nonatomic,weak) IBOutlet UILabel *typeLabel;
 @end
 
-@implementation SmartLinkViewController
+@implementation ScanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.label.text = [WIFIUtil SSIDString];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,12 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)switchClick:(id)sender{
-    self.label.hidden = !self.showSSIDSwitch.on;
+-(IBAction)backClick:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
--(IBAction)confirmClick:(id)sender{
-}
 /*
 #pragma mark - Navigation
 

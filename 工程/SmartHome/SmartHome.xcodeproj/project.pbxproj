@@ -12,6 +12,8 @@
 		D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF31C48E678000FACB0 /* LoginViewController.m */; };
 		D343BB041C4A287500D56638 /* DeviceListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D343BB031C4A287500D56638 /* DeviceListTableViewController.m */; };
 		D343BB071C4A288900D56638 /* DeviceListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D343BB061C4A288900D56638 /* DeviceListTableViewCell.m */; };
+		D3B47A4F1C4CC10600DC1076 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B47A4E1C4CC10600DC1076 /* ScanViewController.m */; };
+		D3B47A531C4CC82200DC1076 /* WIFIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B47A521C4CC82200DC1076 /* WIFIUtil.m */; };
 		D3FBA3EB1C46524A000ECF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3EA1C46524A000ECF85 /* main.m */; };
 		D3FBA3EE1C46524A000ECF85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */; };
 		D3FBA3F41C46524A000ECF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FBA3F21C46524A000ECF85 /* Main.storyboard */; };
@@ -32,6 +34,10 @@
 		D343BB031C4A287500D56638 /* DeviceListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTableViewController.m; sourceTree = "<group>"; };
 		D343BB051C4A288900D56638 /* DeviceListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListTableViewCell.h; sourceTree = "<group>"; };
 		D343BB061C4A288900D56638 /* DeviceListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTableViewCell.m; sourceTree = "<group>"; };
+		D3B47A4D1C4CC10600DC1076 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		D3B47A4E1C4CC10600DC1076 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		D3B47A511C4CC82200DC1076 /* WIFIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIUtil.h; sourceTree = "<group>"; };
+		D3B47A521C4CC82200DC1076 /* WIFIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIUtil.m; sourceTree = "<group>"; };
 		D3FBA3E61C46524A000ECF85 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FBA3EA1C46524A000ECF85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,8 +88,19 @@
 				D33EFDF31C48E678000FACB0 /* LoginViewController.m */,
 				D343BB021C4A287500D56638 /* DeviceListTableViewController.h */,
 				D343BB031C4A287500D56638 /* DeviceListTableViewController.m */,
+				D3B47A4D1C4CC10600DC1076 /* ScanViewController.h */,
+				D3B47A4E1C4CC10600DC1076 /* ScanViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D3B47A501C4CC80D00DC1076 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D3B47A511C4CC82200DC1076 /* WIFIUtil.h */,
+				D3B47A521C4CC82200DC1076 /* WIFIUtil.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D3FBA3DD1C46524A000ECF85 = {
@@ -111,6 +128,7 @@
 				D3FBA3F21C46524A000ECF85 /* Main.storyboard */,
 				D3FBA3F51C46524A000ECF85 /* Assets.xcassets */,
 				D3FBA3F71C46524A000ECF85 /* LaunchScreen.storyboard */,
+				D3B47A501C4CC80D00DC1076 /* Utils */,
 				D3FBA4001C4657CD000ECF85 /* View */,
 				D33EFDEE1C48E00E000FACB0 /* ViewController */,
 				D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */,
@@ -262,7 +280,9 @@
 			files = (
 				D3FBA4031C4657EB000ECF85 /* LoginButton.swift in Sources */,
 				D343BB041C4A287500D56638 /* DeviceListTableViewController.m in Sources */,
+				D3B47A531C4CC82200DC1076 /* WIFIUtil.m in Sources */,
 				D33EFDF11C48E00E000FACB0 /* SmartLinkViewController.m in Sources */,
+				D3B47A4F1C4CC10600DC1076 /* ScanViewController.m in Sources */,
 				D3FBA3EE1C46524A000ECF85 /* AppDelegate.m in Sources */,
 				D3FBA3EB1C46524A000ECF85 /* main.m in Sources */,
 				D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */,
