@@ -8,12 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		82799D8E0802E7D18A5EBACB /* libPods-SmartHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B74ABB349DEA4E6A2FFDD3 /* libPods-SmartHome.a */; };
+		D33A44CD1C5B240A0065C488 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44CA1C5B240A0065C488 /* User+CoreDataProperties.m */; };
+		D33A44CE1C5B240A0065C488 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44CC1C5B240A0065C488 /* User.m */; };
+		D33A44D11C5B4F6F0065C488 /* UDPSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44D01C5B4F6F0065C488 /* UDPSocketManager.m */; };
+		D33A44D41C5B83440065C488 /* TCPSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44D31C5B83440065C488 /* TCPSocketManager.m */; };
+		D33A44D71C5E0B990065C488 /* RegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44D61C5E0B990065C488 /* RegisterTableViewController.m */; };
+		D33A44DA1C5F27460065C488 /* DataCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44D91C5F27460065C488 /* DataCode.m */; };
+		D33A44DD1C5F29860065C488 /* CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44DC1C5F29860065C488 /* CRC8.m */; };
+		D33A44E01C5F34830065C488 /* DatumCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44DF1C5F34830065C488 /* DatumCode.m */; };
 		D33EFDF11C48E00E000FACB0 /* SmartLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */; };
 		D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF31C48E678000FACB0 /* LoginViewController.m */; };
 		D343BB041C4A287500D56638 /* DeviceListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D343BB031C4A287500D56638 /* DeviceListTableViewController.m */; };
 		D343BB071C4A288900D56638 /* DeviceListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D343BB061C4A288900D56638 /* DeviceListTableViewCell.m */; };
+		D34DA6C91C5622E80085AD88 /* BaseHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DA6C61C5622E80085AD88 /* BaseHTTPRequestOperationManager.m */; };
+		D34DA6CA1C5622E80085AD88 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DA6C81C5622E80085AD88 /* LoginRequest.m */; };
+		D34DA6CD1C5623110085AD88 /* NSString+scisky.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DA6CC1C5623110085AD88 /* NSString+scisky.m */; };
+		D34DA6D01C5623180085AD88 /* UIView+AHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DA6CF1C5623180085AD88 /* UIView+AHKit.m */; };
+		D34DA6D31C5623200085AD88 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D34DA6D21C5623200085AD88 /* UserInfo.m */; };
+		D375BA641C59FB15003B2AFE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D375BA621C59FB15003B2AFE /* Model.xcdatamodeld */; };
+		D375BA691C59FBB2003B2AFE /* SHDevice+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D375BA661C59FBB2003B2AFE /* SHDevice+CoreDataProperties.m */; };
+		D375BA6A1C59FBB2003B2AFE /* SHDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D375BA681C59FBB2003B2AFE /* SHDevice.m */; };
+		D3A4027E1C60BFD7008C1251 /* PlProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A4027D1C60BFD7008C1251 /* PlProtocol.m */; };
+		D3A402811C648810008C1251 /* Msg.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A402801C648810008C1251 /* Msg.m */; };
+		D3A402841C648EF9008C1251 /* CRC16.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A402831C648EF9008C1251 /* CRC16.m */; };
 		D3B47A4F1C4CC10600DC1076 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B47A4E1C4CC10600DC1076 /* ScanViewController.m */; };
 		D3B47A531C4CC82200DC1076 /* WIFIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B47A521C4CC82200DC1076 /* WIFIUtil.m */; };
+		D3EBC66A1C6734EE0002AAA3 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EBC6691C6734EE0002AAA3 /* SetupViewController.m */; };
+		D3EBC66D1C6753770002AAA3 /* ViewController+menu.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EBC66C1C6753770002AAA3 /* ViewController+menu.m */; };
 		D3FBA3EB1C46524A000ECF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3EA1C46524A000ECF85 /* main.m */; };
 		D3FBA3EE1C46524A000ECF85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */; };
 		D3FBA3F41C46524A000ECF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FBA3F21C46524A000ECF85 /* Main.storyboard */; };
@@ -26,6 +47,22 @@
 		10C1E56F2008EAF1A06D57CC /* Pods-SmartHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHome/Pods-SmartHome.debug.xcconfig"; sourceTree = "<group>"; };
 		60B74ABB349DEA4E6A2FFDD3 /* libPods-SmartHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		701C47C1E384A7FCCDDEF5E1 /* Pods-SmartHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHome/Pods-SmartHome.release.xcconfig"; sourceTree = "<group>"; };
+		D33A44C91C5B240A0065C488 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D33A44CA1C5B240A0065C488 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D33A44CB1C5B240A0065C488 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D33A44CC1C5B240A0065C488 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D33A44CF1C5B4F6F0065C488 /* UDPSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPSocketManager.h; sourceTree = "<group>"; };
+		D33A44D01C5B4F6F0065C488 /* UDPSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPSocketManager.m; sourceTree = "<group>"; };
+		D33A44D21C5B83440065C488 /* TCPSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSocketManager.h; sourceTree = "<group>"; };
+		D33A44D31C5B83440065C488 /* TCPSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSocketManager.m; sourceTree = "<group>"; };
+		D33A44D51C5E0B990065C488 /* RegisterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterTableViewController.h; sourceTree = "<group>"; };
+		D33A44D61C5E0B990065C488 /* RegisterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterTableViewController.m; sourceTree = "<group>"; };
+		D33A44D81C5F27460065C488 /* DataCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCode.h; sourceTree = "<group>"; };
+		D33A44D91C5F27460065C488 /* DataCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCode.m; sourceTree = "<group>"; };
+		D33A44DB1C5F29860065C488 /* CRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRC8.h; sourceTree = "<group>"; };
+		D33A44DC1C5F29860065C488 /* CRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRC8.m; sourceTree = "<group>"; };
+		D33A44DE1C5F34830065C488 /* DatumCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatumCode.h; sourceTree = "<group>"; };
+		D33A44DF1C5F34830065C488 /* DatumCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatumCode.m; sourceTree = "<group>"; };
 		D33EFDEF1C48E00E000FACB0 /* SmartLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartLinkViewController.h; sourceTree = "<group>"; };
 		D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartLinkViewController.m; sourceTree = "<group>"; };
 		D33EFDF21C48E678000FACB0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -34,10 +71,35 @@
 		D343BB031C4A287500D56638 /* DeviceListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTableViewController.m; sourceTree = "<group>"; };
 		D343BB051C4A288900D56638 /* DeviceListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListTableViewCell.h; sourceTree = "<group>"; };
 		D343BB061C4A288900D56638 /* DeviceListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTableViewCell.m; sourceTree = "<group>"; };
+		D34DA6C51C5622E80085AD88 /* BaseHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		D34DA6C61C5622E80085AD88 /* BaseHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		D34DA6C71C5622E80085AD88 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		D34DA6C81C5622E80085AD88 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		D34DA6CB1C5623110085AD88 /* NSString+scisky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+scisky.h"; sourceTree = "<group>"; };
+		D34DA6CC1C5623110085AD88 /* NSString+scisky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+scisky.m"; sourceTree = "<group>"; };
+		D34DA6CE1C5623180085AD88 /* UIView+AHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AHKit.h"; sourceTree = "<group>"; };
+		D34DA6CF1C5623180085AD88 /* UIView+AHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AHKit.m"; sourceTree = "<group>"; };
+		D34DA6D11C5623200085AD88 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		D34DA6D21C5623200085AD88 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		D375BA631C59FB15003B2AFE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D375BA651C59FBB2003B2AFE /* SHDevice+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHDevice+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D375BA661C59FBB2003B2AFE /* SHDevice+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHDevice+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D375BA671C59FBB2003B2AFE /* SHDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDevice.h; sourceTree = "<group>"; };
+		D375BA681C59FBB2003B2AFE /* SHDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDevice.m; sourceTree = "<group>"; };
+		D3A4027C1C60BFD7008C1251 /* PlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlProtocol.h; sourceTree = "<group>"; };
+		D3A4027D1C60BFD7008C1251 /* PlProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlProtocol.m; sourceTree = "<group>"; };
+		D3A4027F1C648810008C1251 /* Msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Msg.h; sourceTree = "<group>"; };
+		D3A402801C648810008C1251 /* Msg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Msg.m; sourceTree = "<group>"; };
+		D3A402821C648EF9008C1251 /* CRC16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRC16.h; sourceTree = "<group>"; };
+		D3A402831C648EF9008C1251 /* CRC16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRC16.m; sourceTree = "<group>"; };
 		D3B47A4D1C4CC10600DC1076 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		D3B47A4E1C4CC10600DC1076 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		D3B47A511C4CC82200DC1076 /* WIFIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIUtil.h; sourceTree = "<group>"; };
 		D3B47A521C4CC82200DC1076 /* WIFIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIUtil.m; sourceTree = "<group>"; };
+		D3EBC6681C6734EE0002AAA3 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		D3EBC6691C6734EE0002AAA3 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		D3EBC66B1C6753770002AAA3 /* ViewController+menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+menu.h"; sourceTree = "<group>"; };
+		D3EBC66C1C6753770002AAA3 /* ViewController+menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+menu.m"; sourceTree = "<group>"; };
 		D3FBA3E61C46524A000ECF85 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FBA3EA1C46524A000ECF85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,15 +152,70 @@
 				D343BB031C4A287500D56638 /* DeviceListTableViewController.m */,
 				D3B47A4D1C4CC10600DC1076 /* ScanViewController.h */,
 				D3B47A4E1C4CC10600DC1076 /* ScanViewController.m */,
+				D33A44D51C5E0B990065C488 /* RegisterTableViewController.h */,
+				D33A44D61C5E0B990065C488 /* RegisterTableViewController.m */,
+				D3EBC6681C6734EE0002AAA3 /* SetupViewController.h */,
+				D3EBC6691C6734EE0002AAA3 /* SetupViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D34DA6C41C5622E80085AD88 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D34DA6C51C5622E80085AD88 /* BaseHTTPRequestOperationManager.h */,
+				D34DA6C61C5622E80085AD88 /* BaseHTTPRequestOperationManager.m */,
+				D34DA6C71C5622E80085AD88 /* LoginRequest.h */,
+				D34DA6C81C5622E80085AD88 /* LoginRequest.m */,
+				D33A44CF1C5B4F6F0065C488 /* UDPSocketManager.h */,
+				D33A44D01C5B4F6F0065C488 /* UDPSocketManager.m */,
+				D33A44D21C5B83440065C488 /* TCPSocketManager.h */,
+				D33A44D31C5B83440065C488 /* TCPSocketManager.m */,
+				D33A44D81C5F27460065C488 /* DataCode.h */,
+				D33A44D91C5F27460065C488 /* DataCode.m */,
+				D33A44DB1C5F29860065C488 /* CRC8.h */,
+				D33A44DC1C5F29860065C488 /* CRC8.m */,
+				D33A44DE1C5F34830065C488 /* DatumCode.h */,
+				D33A44DF1C5F34830065C488 /* DatumCode.m */,
+				D3A4027C1C60BFD7008C1251 /* PlProtocol.h */,
+				D3A4027D1C60BFD7008C1251 /* PlProtocol.m */,
+				D3A4027F1C648810008C1251 /* Msg.h */,
+				D3A402801C648810008C1251 /* Msg.m */,
+				D3A402821C648EF9008C1251 /* CRC16.h */,
+				D3A402831C648EF9008C1251 /* CRC16.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D375BA611C59FAFE003B2AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D33A44C91C5B240A0065C488 /* User+CoreDataProperties.h */,
+				D33A44CA1C5B240A0065C488 /* User+CoreDataProperties.m */,
+				D33A44CB1C5B240A0065C488 /* User.h */,
+				D33A44CC1C5B240A0065C488 /* User.m */,
+				D375BA651C59FBB2003B2AFE /* SHDevice+CoreDataProperties.h */,
+				D375BA661C59FBB2003B2AFE /* SHDevice+CoreDataProperties.m */,
+				D375BA671C59FBB2003B2AFE /* SHDevice.h */,
+				D375BA681C59FBB2003B2AFE /* SHDevice.m */,
+				D375BA621C59FB15003B2AFE /* Model.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D3B47A501C4CC80D00DC1076 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D34DA6D11C5623200085AD88 /* UserInfo.h */,
+				D34DA6D21C5623200085AD88 /* UserInfo.m */,
+				D34DA6CE1C5623180085AD88 /* UIView+AHKit.h */,
+				D34DA6CF1C5623180085AD88 /* UIView+AHKit.m */,
+				D34DA6CB1C5623110085AD88 /* NSString+scisky.h */,
+				D34DA6CC1C5623110085AD88 /* NSString+scisky.m */,
 				D3B47A511C4CC82200DC1076 /* WIFIUtil.h */,
 				D3B47A521C4CC82200DC1076 /* WIFIUtil.m */,
+				D3EBC66B1C6753770002AAA3 /* ViewController+menu.h */,
+				D3EBC66C1C6753770002AAA3 /* ViewController+menu.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -128,6 +245,8 @@
 				D3FBA3F21C46524A000ECF85 /* Main.storyboard */,
 				D3FBA3F51C46524A000ECF85 /* Assets.xcassets */,
 				D3FBA3F71C46524A000ECF85 /* LaunchScreen.storyboard */,
+				D375BA611C59FAFE003B2AFE /* Model */,
+				D34DA6C41C5622E80085AD88 /* Networking */,
 				D3B47A501C4CC80D00DC1076 /* Utils */,
 				D3FBA4001C4657CD000ECF85 /* View */,
 				D33EFDEE1C48E00E000FACB0 /* ViewController */,
@@ -278,14 +397,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34DA6C91C5622E80085AD88 /* BaseHTTPRequestOperationManager.m in Sources */,
 				D3FBA4031C4657EB000ECF85 /* LoginButton.swift in Sources */,
+				D375BA641C59FB15003B2AFE /* Model.xcdatamodeld in Sources */,
+				D3EBC66D1C6753770002AAA3 /* ViewController+menu.m in Sources */,
 				D343BB041C4A287500D56638 /* DeviceListTableViewController.m in Sources */,
+				D33A44DA1C5F27460065C488 /* DataCode.m in Sources */,
 				D3B47A531C4CC82200DC1076 /* WIFIUtil.m in Sources */,
+				D34DA6CA1C5622E80085AD88 /* LoginRequest.m in Sources */,
+				D33A44D11C5B4F6F0065C488 /* UDPSocketManager.m in Sources */,
 				D33EFDF11C48E00E000FACB0 /* SmartLinkViewController.m in Sources */,
+				D34DA6D31C5623200085AD88 /* UserInfo.m in Sources */,
 				D3B47A4F1C4CC10600DC1076 /* ScanViewController.m in Sources */,
+				D33A44D41C5B83440065C488 /* TCPSocketManager.m in Sources */,
+				D3EBC66A1C6734EE0002AAA3 /* SetupViewController.m in Sources */,
+				D3A402811C648810008C1251 /* Msg.m in Sources */,
 				D3FBA3EE1C46524A000ECF85 /* AppDelegate.m in Sources */,
+				D3A4027E1C60BFD7008C1251 /* PlProtocol.m in Sources */,
+				D33A44E01C5F34830065C488 /* DatumCode.m in Sources */,
 				D3FBA3EB1C46524A000ECF85 /* main.m in Sources */,
+				D3A402841C648EF9008C1251 /* CRC16.m in Sources */,
+				D34DA6D01C5623180085AD88 /* UIView+AHKit.m in Sources */,
+				D33A44CD1C5B240A0065C488 /* User+CoreDataProperties.m in Sources */,
+				D375BA6A1C59FBB2003B2AFE /* SHDevice.m in Sources */,
+				D33A44DD1C5F29860065C488 /* CRC8.m in Sources */,
+				D34DA6CD1C5623110085AD88 /* NSString+scisky.m in Sources */,
+				D33A44CE1C5B240A0065C488 /* User.m in Sources */,
 				D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */,
+				D375BA691C59FBB2003B2AFE /* SHDevice+CoreDataProperties.m in Sources */,
+				D33A44D71C5E0B990065C488 /* RegisterTableViewController.m in Sources */,
 				D343BB071C4A288900D56638 /* DeviceListTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +587,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D375BA621C59FB15003B2AFE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D375BA631C59FB15003B2AFE /* Model.xcdatamodel */,
+			);
+			currentVersion = D375BA631C59FB15003B2AFE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D3FBA3DE1C46524A000ECF85 /* Project object */;
 }

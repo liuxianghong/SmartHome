@@ -7,6 +7,12 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginRequest.h"
+#import "NSString+scisky.h"
+#import "UserInfo.h"
+#import <MBProgressHUD.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import "TCPSocketManager.h"
 
 @interface LoginViewController ()
 @property (nonatomic,weak) IBOutlet UITextField *usernameTextField;
@@ -18,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.usernameTextField.text = @"andyi";
+    self.passwordTextField.text = @"1234";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +34,47 @@
 }
 
 -(IBAction)loginClick:(id)sender{
-    [self performSegueWithIdentifier:@"deviceListIdentifier" sender:nil];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
+    if (self.usernameTextField.text.length == 0) {
+        hud.mode = MBProgressHUDModeText;
+        hud.detailsLabelText = @"请输入用户名";
+        [hud hide:YES afterDelay:1.0f];
+        return;
+    }
+    if (self.passwordTextField.text.length == 0) {
+        hud.mode = MBProgressHUDModeText;
+        hud.detailsLabelText = @"请输入密码";
+        [hud hide:YES afterDelay:1.0f];
+        return;
+    }
+    [LoginRequest UserLoginWithUsername:self.usernameTextField.text password:[self.passwordTextField.text MD5String] success:^(id responseObject) {
+        GDataXMLElement *root = responseObject;
+        if ([root.name isEqualToString:@"string"]) {
+            NSString *str = root.stringValue;
+            if(str.length >= 1){
+                NSArray *array = [str componentsSeparatedByString:@":"];
+                if ([array[0] isEqualToString:@"OK"]) {
+                    [hud hide:YES];
+                    [[NSUserDefaults standardUserDefaults] setObject:self.usernameTextField.text forKey:@"userName"];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                    [[UserInfo currentUser] upDataWithArray:array];
+                    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+                    [[TCPSocketManager sharedManager] Login];
+                    [self performSegueWithIdentifier:@"deviceListIdentifier" sender:nil];
+                    return;
+                }
+            }
+            
+        }
+        hud.mode = MBProgressHUDModeText;
+        hud.detailsLabelText = @"用户名或密码错误";
+        [hud hide:YES afterDelay:1.0f];
+    } failure:^(NSError *error) {
+        hud.mode = MBProgressHUDModeText;
+        hud.detailsLabelText = error.domain;
+        [hud hide:YES afterDelay:1.0f];
+    }];
+    //[self performSegueWithIdentifier:@"deviceListIdentifier" sender:nil];
 }
 
 /*

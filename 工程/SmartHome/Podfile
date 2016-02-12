@@ -10,5 +10,7 @@ pod 'DZNEmptyDataSet'
 pod 'JSONKit-NoWarning'
 pod 'MJRefresh'
 pod 'CocoaAsyncSocket'
+pod 'GDataXML-HTML'
+pod 'MagicalRecord'
 end
 

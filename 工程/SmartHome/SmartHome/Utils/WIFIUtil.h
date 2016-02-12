@@ -10,4 +10,5 @@
 
 @interface WIFIUtil : NSObject
 +(NSString *)SSIDString;
++(NSString *)BSSIDString;
 @end
