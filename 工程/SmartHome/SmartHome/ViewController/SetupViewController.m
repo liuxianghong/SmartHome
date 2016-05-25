@@ -34,35 +34,39 @@
 }
 
 -(IBAction)lock1click:(UIButton *)sender{
-    NSString *msg = @"LIGHT:1";
-    if (sender.selected) {
-        msg = @"LIGHT:0";
-    }
+    NSString *msg = @"LIGHT1:0";
+    [self performSelector:@selector(doMSG:) withObject:@"LIGHT1:1" afterDelay:0.8];
     [[TCPSocketManager sharedManager] commandDevice:self.device command:msg];
+    sender.backgroundColor = [UIColor colorWithRed:63/255.0 green:122/255.0 blue:22/255.0 alpha:0.8];
 }
 
 -(IBAction)lock2click:(UIButton *)sender{
-    NSString *msg = @"LIGHT1:1";
-    if (sender.selected) {
-        msg = @"LIGHT1:0";
-    }
+    NSString *msg = @"LIGHT:0";
+    [self performSelector:@selector(doMSG:) withObject:@"LIGHT:1" afterDelay:0.8];
     [[TCPSocketManager sharedManager] commandDevice:self.device command:msg];
+    sender.backgroundColor = [UIColor colorWithRed:63/255.0 green:122/255.0 blue:22/255.0 alpha:0.8];
+}
+
+-(void)doMSG:(NSString *)msg{
+    [[TCPSocketManager sharedManager] commandDevice:self.device command:msg];
+    self.lock1Button.backgroundColor = [UIColor whiteColor];
+    self.lock2Button.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)didCommandDevice:(NSData *)deviceID state:(NSInteger)state str:(NSString *)str
 {
     NSLog(@"%@ %ld %@",deviceID,state,str);
-    if ([str hasPrefix:@"LIGHT:"]) {
-        str = [str stringByReplacingOccurrencesOfString:@"LIGHT:" withString:@""];
-        BOOL bo = [str intValue];
-        self.lock1Button.selected = bo;
-        self.lock1ImageView.highlighted = bo;
-    }
     if ([str hasPrefix:@"LIGHT1:"]) {
         str = [str stringByReplacingOccurrencesOfString:@"LIGHT1:" withString:@""];
         BOOL bo = [str intValue];
-        self.lock2Button.selected = bo;
-        self.lock2ImageView.highlighted = bo;
+        //self.lock1Button.selected = !bo;
+        self.lock1ImageView.highlighted = !bo;
+    }
+    if ([str hasPrefix:@"LIGHT:"]) {
+        str = [str stringByReplacingOccurrencesOfString:@"LIGHT:" withString:@""];
+        BOOL bo = [str intValue];
+        //self.lock2Button.selected = !bo;
+        self.lock2ImageView.highlighted = !bo;
     }
 }
 /*

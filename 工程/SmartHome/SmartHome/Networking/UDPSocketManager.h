@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LocalizedString.h"
 
 uint64_t reversebytes_uint64t(uint64_t value);
 

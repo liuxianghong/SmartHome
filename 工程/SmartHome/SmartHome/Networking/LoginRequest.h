@@ -20,4 +20,8 @@
 + (void)CheckUserNameWithUsername:(NSString *)user success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 
 + (void)HeartThrobWithUsername:(NSString *)user token:(NSString *)token success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
+
++ (void)ChangeDeviceNickNameWithUsername:(NSString *)user token:(NSString *)token deviceid:(NSString *)deviceid nickName:(NSString *)nickName success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
+
++ (void)ChangePasswordWithUsername:(NSString *)user token:(NSString *)token password:(NSString *)password newpassword:(NSString *)newpassword success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure;
 @end

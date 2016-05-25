@@ -1,0 +1,132 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2J8-Mw-P95"; */
+"2J8-Mw-P95.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3HY-oc-gRM"; */
+"3HY-oc-gRM.text" = "Label";
+
+/* Class = "UILabel"; text = "Device ID"; ObjectID = "3Ta-mx-bSd"; */
+"3Ta-mx-bSd.text" = "设备ID";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "3Xa-FA-igQ"; */
+"3Xa-FA-igQ.text" = "手机号";
+
+/* Class = "UIButton"; normalTitle = "SmartLink"; ObjectID = "74C-MF-XZA"; */
+"74C-MF-XZA.normalTitle" = "智能连接";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "7sh-XJ-HDW"; */
+"7sh-XJ-HDW.normalTitle" = "注册";
+
+/* Class = "UILabel"; text = "Device Password"; ObjectID = "8Kk-2n-aZN"; */
+"8Kk-2n-aZN.text" = "设备密码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8g5-Pb-Tot"; */
+"8g5-Pb-Tot.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Control"; ObjectID = "8zq-TR-pdV"; */
+"8zq-TR-pdV.title" = "控制";
+
+/* Class = "UINavigationItem"; title = "Smart Device"; ObjectID = "9JO-03-Avf"; */
+"9JO-03-Avf.title" = "智能设备";
+
+/* Class = "UILabel"; text = "Device ID:"; ObjectID = "ALJ-eC-bFQ"; */
+"ALJ-eC-bFQ.text" = "设备ID:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "C6S-oY-pBU"; */
+"C6S-oY-pBU.text" = "密码:";
+
+/* Class = "UIButton"; normalTitle = "Open lock 2"; ObjectID = "Chr-BT-7Uc"; */
+"Chr-BT-7Uc.normalTitle" = "打开锁2";
+
+/* Class = "UIButton"; normalTitle = "Scan"; ObjectID = "Ded-WZ-GrN"; */
+"Ded-WZ-GrN.normalTitle" = "扫描";
+
+/* Class = "UILabel"; text = "ID:"; ObjectID = "EVO-cu-UWC"; */
+"EVO-cu-UWC.text" = "ID:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "J6Y-gZ-Euj"; */
+"J6Y-gZ-Euj.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "SmartLink"; ObjectID = "Kem-8z-Rki"; */
+"Kem-8z-Rki.title" = "智能连接";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "KxS-8i-Jlp"; */
+"KxS-8i-Jlp.normalTitle" = "登录";
+
+/* Class = "UIButton"; normalTitle = "Configure"; ObjectID = "RVH-SX-pBS"; */
+"RVH-SX-pBS.normalTitle" = "配置";
+
+/* Class = "UINavigationItem"; title = "Scan"; ObjectID = "S6Y-d8-Ywz"; */
+"S6Y-d8-Ywz.title" = "扫描";
+
+/* Class = "UILabel"; text = "SSID is Hidden"; ObjectID = "VJY-Bd-rEZ"; */
+"VJY-Bd-rEZ.text" = "SSID是否隐藏";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YXy-Ev-sIq"; */
+"YXy-Ev-sIq.text" = "Label";
+
+/* Class = "UILabel"; text = "SSID:"; ObjectID = "YbF-5Q-bJn"; */
+"YbF-5Q-bJn.text" = "SSID:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "bXk-53-Bq9"; */
+"bXk-53-Bq9.text" = "密码:";
+
+/* Class = "UIButton"; normalTitle = "Open lock 1"; ObjectID = "bn8-r7-jY9"; */
+"bn8-r7-jY9.normalTitle" = "打开锁1";
+
+/* Class = "UIBarButtonItem"; title = "返回"; ObjectID = "cSE-r4-toy"; */
+"cSE-r4-toy.title" = "返回";
+
+/* Class = "UILabel"; text = "User name"; ObjectID = "eU3-1X-M6f"; */
+"eU3-1X-M6f.text" = "用户名";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "eoX-Q0-w9f"; */
+"eoX-Q0-w9f.text" = "名称:";
+
+/* Class = "UINavigationItem"; title = "Register"; ObjectID = "gie-q1-HU8"; */
+"gie-q1-HU8.title" = "注册";
+
+/* Class = "UILabel"; text = "Status:"; ObjectID = "hPi-Ya-Vm0"; */
+"hPi-Ya-Vm0.text" = "状态:";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "lFp-yc-bcN"; */
+"lFp-yc-bcN.normalTitle" = "注册";
+
+/* Class = "UIButton"; normalTitle = "Scan"; ObjectID = "lPP-Ym-43b"; */
+"lPP-Ym-43b.normalTitle" = "扫描";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "lkV-uZ-JvN"; */
+"lkV-uZ-JvN.title" = "返回";
+
+/* Class = "UIBarButtonItem"; title = "返回"; ObjectID = "na3-4Q-EIP"; */
+"na3-4Q-EIP.title" = "返回";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "odQ-70-kMz"; */
+"odQ-70-kMz.placeholder" = "密码";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "pFB-oa-rXq"; */
+"pFB-oa-rXq.text" = "密码";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "qw7-Mk-37f"; */
+"qw7-Mk-37f.title" = "登录";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "rMi-oG-f06"; */
+"rMi-oG-f06.normalTitle" = "确定";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "rUX-VS-ceD"; */
+"rUX-VS-ceD.text" = "名称:";
+
+/* Class = "UITextField"; placeholder = "User name"; ObjectID = "vq2-Uw-jiJ"; */
+"vq2-Uw-jiJ.placeholder" = "用户名";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "wbM-zs-t5I"; */
+"wbM-zs-t5I.text" = "邮箱";
+
+"XBp-DT-3YG.normalTitle" = "重命名";
+
+"CnL-sH-Twi.text" = "旧密码";
+"F4A-yv-efr.text" = "新密码";
+"Ol9-uS-2yu.text" = "重复密码";
+"YUD-E1-4zw.normalTitle" = "确定";
+"SAx-xp-AVl.title" = "修改密码";
+

@@ -52,4 +52,25 @@
                           };
     [[BaseHTTPRequestOperationManager sharedManager]defaultHTTPWithMethod:kMethodheartThrob WithParameters:dic post:YES success:success failure:failure];
 }
+
+
++ (void)ChangeDeviceNickNameWithUsername:(NSString *)user token:(NSString *)token deviceid:(NSString *)deviceid nickName:(NSString *)nickName success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure{
+    NSDictionary *dic = @{
+                          @"userName" : user,
+                          @"torken" : token,
+                          @"deviceid" : deviceid,
+                          @"nickName" : nickName
+                          };
+    [[BaseHTTPRequestOperationManager sharedManager]defaultHTTPWithMethod:@"changeDeviceNickName" WithParameters:dic post:YES success:success failure:failure];
+}
+
++ (void)ChangePasswordWithUsername:(NSString *)user token:(NSString *)token password:(NSString *)password newpassword:(NSString *)newpassword success:(void (^)(id responseObject))success failure:(void (^)(NSError *error))failure{
+    NSDictionary *dic = @{
+                          @"userName" : user,
+                          @"torken" : token,
+                          @"passWord" : password,
+                          @"newPassword" : newpassword
+                          };
+    [[BaseHTTPRequestOperationManager sharedManager]defaultHTTPWithMethod:@"changePassword" WithParameters:dic post:YES success:success failure:failure];
+}
 @end

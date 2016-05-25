@@ -1,0 +1,25 @@
+/*
+ Localizable.strings
+ SmartHome
+ 
+ Created by 刘向宏 on 16/5/11.
+ Copyright © 2016年 刘向宏. All rights reserved.
+ */
+"请输入用户名" = "Please enter your user name";
+"请输入密码" = "Please enter your password.";
+"用户名或密码错误" = "Wrong username or password";
+"暂无设备" = "No Device";
+"在线" = "Online";
+"离线" = "Offline";
+"暂时不支持此功能" = "Does not support this feature";
+"修改成功" = "Successfully modified";
+"修改失败" = "Modification fails";
+"今天 HH:mm" = "Today HH:mm";
+"最后更新：%@" = "Latest update:%@";
+"最后更新：无记录" = "Last update: No records";
+"下拉可以刷新" = "Pull down to refresh";
+"松开立即刷新" = "Release the Refresh Now";
+"正在刷新数据中..." = "Refreshing data ...";
+"无法连接到服务器" = "Unable to connect to server";
+"FAIL:当前设备已分配给其它用户" = "FAIL: The current device is assigned to another user";
+"服务器返回错误" = "Server returned an error";

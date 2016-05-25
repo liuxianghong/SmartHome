@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  SmartHome
+
+  Created by 刘向宏 on 16/5/11.
+  Copyright © 2016年 刘向宏. All rights reserved.
+*/
+"SmarrLink touch is success,bssid = %@,InetAddress = %@" = "智能链接成功，BSSID=%@，InetAddress类=%@";
+"SmarrLink touch is failure" = "智能链接失败";
+"SmartLink touch is configuring,\nplease wait for a moment…" = "智能链接配置中，\n请稍等片刻......";
+"NO SSID" = "没有SSID";
+"Prompt" = "提示";
+"Sure you want to delete the device?" = "确定要删除的设备？";
+"OK" = "好";
+"Cancel" = "取消";
+"Delete Failure" = "删除失败";
+"Delete Success" = "删除成功";
+"Add" = "添加";
+"Scan Failure" = "扫描失败";
+"Scan Success" = "扫描成功";
+"Add Failure" = "添加失败";
+"Add Success" = "添加成功";
+"please enter user name" = "请输入用户名";
+"please enter password" = "请输入密码";
+"please enter phone number" = "请输入手机号码";
+"please enter email" = "请输入电子邮件";
+"please enter device ID" = "请输入设备ID";
+"please enter device password" = "请输入设备密码";
+"Register Failure" = "注册失败";
+"Device Name" = "设备名称";
+"Incorrect password" = "密码不正确";

@@ -93,6 +93,48 @@
     }];
 }
 
+-(IBAction)renameclick:(UIButton *)sender{
+    SHDevice *device = tableViewArray[sender.tag];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:LocalizedStringTr(@"Device Name") preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:LocalizedStringTr(@"OK") style:UIAlertActionStyleDefault handler:^(UIAlertAction *textField){
+        UITextField *login = alertController.textFields.firstObject;
+        if (login.text.length > 0) {
+            MBProgressHUD *huds = [MBProgressHUD showHUDAddedTo:self.view.window animated:true];
+            [LoginRequest ChangeDeviceNickNameWithUsername:[UserInfo currentUser].userName token:[UserInfo currentUser].token deviceid:device.did nickName:login.text success:^(id responseObject) {
+                GDataXMLElement *root = responseObject;
+                NSString *str = root.stringValue;
+                NSLog(@"%@",str);
+                NSString *mesge = @"";
+                if ([str isEqualToString:@"OK"]) {
+                    mesge = LocalizedStringTr(@"修改成功");
+                    device.name = login.text;
+                    [self.tableView reloadData];
+                }
+                else{
+                    mesge = LocalizedStringTr(@"修改失败");
+                }
+                huds.detailsLabelText = mesge;
+                huds.mode = MBProgressHUDModeText;
+                [huds hide:YES];
+            } failure:^(NSError *error) {
+                huds.mode = MBProgressHUDModeText;
+                huds.detailsLabelText = error.domain;
+                [huds hide:YES afterDelay:1.0f];
+            }];
+        }
+        
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:LocalizedStringTr(@"Cancel") style:UIAlertActionStyleDefault handler:^(UIAlertAction *textField){
+        
+    }];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.text = device.name;
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -104,7 +146,7 @@
 }
 
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
-    return [[NSAttributedString alloc] initWithString:@"暂无设备"];
+    return [[NSAttributedString alloc] initWithString:LocalizedStringTr(@"暂无设备")];
 }
 
 #pragma mark - Table view data source
@@ -129,7 +171,8 @@
     SHDevice *device = tableViewArray[indexPath.row];
     cell.deviceIDLabel.text = device.did;
     cell.deviceNameLabel.text = device.name;
-    cell.deviceStatusLabel.text = [device.state integerValue] ? @"在线" : @"离线";
+    cell.deviceStatusLabel.text = [device.state integerValue] ? LocalizedStringTr(@"在线") : LocalizedStringTr(@"离线");
+    cell.renamebutton.tag = indexPath.row;
     
     return cell;
 }
@@ -144,15 +187,15 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"Prompt" message:@"Sure you want to delete the device?" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertController *vc = [UIAlertController alertControllerWithTitle:LocalizedStringTr(@"Prompt") message:LocalizedStringTr(@"Sure you want to delete the device?") preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:LocalizedStringTr(@"OK") style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
             path = indexPath;
             SHDevice *device = tableViewArray[indexPath.row];
             [[TCPSocketManager sharedManager] deleteDevice:device.did];
             hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             timer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(cutdownAdd) userInfo:nil repeats:YES];
         }];
-        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:LocalizedStringTr(@"Cancel") style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             
         }];
         [vc addAction:ok];
@@ -178,7 +221,7 @@
         [self.tableView deleteRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationFade];
     }
     hud.mode = MBProgressHUDModeText;
-    hud.detailsLabelText = faile ? @"Delete Failure" : @"Delete Success";
+    hud.detailsLabelText = faile ? LocalizedStringTr(@"Delete Failure") : LocalizedStringTr(@"Delete Success");
     [hud hide:YES afterDelay:1.0];
 }
 

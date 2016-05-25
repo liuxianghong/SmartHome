@@ -16,6 +16,9 @@
 		D33A44DA1C5F27460065C488 /* DataCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44D91C5F27460065C488 /* DataCode.m */; };
 		D33A44DD1C5F29860065C488 /* CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44DC1C5F29860065C488 /* CRC8.m */; };
 		D33A44E01C5F34830065C488 /* DatumCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A44DF1C5F34830065C488 /* DatumCode.m */; };
+		D33C58F21CE35CEC005FA851 /* LocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C58F11CE35CEC005FA851 /* LocalizedString.m */; };
+		D33C58F51CE35E7F005FA851 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D33C58F71CE35E7F005FA851 /* Localizable.strings */; };
+		D33C58FD1CE37EE9005FA851 /* ChangePWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C58FC1CE37EE9005FA851 /* ChangePWViewController.m */; };
 		D33EFDF11C48E00E000FACB0 /* SmartLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */; };
 		D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33EFDF31C48E678000FACB0 /* LoginViewController.m */; };
 		D343BB041C4A287500D56638 /* DeviceListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D343BB031C4A287500D56638 /* DeviceListTableViewController.m */; };
@@ -63,6 +66,14 @@
 		D33A44DC1C5F29860065C488 /* CRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRC8.m; sourceTree = "<group>"; };
 		D33A44DE1C5F34830065C488 /* DatumCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatumCode.h; sourceTree = "<group>"; };
 		D33A44DF1C5F34830065C488 /* DatumCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatumCode.m; sourceTree = "<group>"; };
+		D33C58F01CE35CEC005FA851 /* LocalizedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizedString.h; sourceTree = "<group>"; };
+		D33C58F11CE35CEC005FA851 /* LocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizedString.m; sourceTree = "<group>"; };
+		D33C58F61CE35E7F005FA851 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D33C58F81CE35EA5005FA851 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D33C58F91CE35EA5005FA851 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D33C58FA1CE35EA5005FA851 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D33C58FB1CE37EE9005FA851 /* ChangePWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePWViewController.h; sourceTree = "<group>"; };
+		D33C58FC1CE37EE9005FA851 /* ChangePWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePWViewController.m; sourceTree = "<group>"; };
 		D33EFDEF1C48E00E000FACB0 /* SmartLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartLinkViewController.h; sourceTree = "<group>"; };
 		D33EFDF01C48E00E000FACB0 /* SmartLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartLinkViewController.m; sourceTree = "<group>"; };
 		D33EFDF21C48E678000FACB0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -156,6 +167,8 @@
 				D33A44D61C5E0B990065C488 /* RegisterTableViewController.m */,
 				D3EBC6681C6734EE0002AAA3 /* SetupViewController.h */,
 				D3EBC6691C6734EE0002AAA3 /* SetupViewController.m */,
+				D33C58FB1CE37EE9005FA851 /* ChangePWViewController.h */,
+				D33C58FC1CE37EE9005FA851 /* ChangePWViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -206,6 +219,8 @@
 		D3B47A501C4CC80D00DC1076 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D33C58F01CE35CEC005FA851 /* LocalizedString.h */,
+				D33C58F11CE35CEC005FA851 /* LocalizedString.m */,
 				D34DA6D11C5623200085AD88 /* UserInfo.h */,
 				D34DA6D21C5623200085AD88 /* UserInfo.m */,
 				D34DA6CE1C5623180085AD88 /* UIView+AHKit.h */,
@@ -250,9 +265,6 @@
 				D3B47A501C4CC80D00DC1076 /* Utils */,
 				D3FBA4001C4657CD000ECF85 /* View */,
 				D33EFDEE1C48E00E000FACB0 /* ViewController */,
-				D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */,
-				D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */,
-				D3FBA3FA1C46524A000ECF85 /* Info.plist */,
 				D3FBA3E91C46524A000ECF85 /* Supporting Files */,
 			);
 			path = SmartHome;
@@ -261,7 +273,11 @@
 		D3FBA3E91C46524A000ECF85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3FBA3EC1C46524A000ECF85 /* AppDelegate.h */,
+				D3FBA3ED1C46524A000ECF85 /* AppDelegate.m */,
+				D3FBA3FA1C46524A000ECF85 /* Info.plist */,
 				D3FBA3EA1C46524A000ECF85 /* main.m */,
+				D33C58F71CE35E7F005FA851 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -310,6 +326,7 @@
 				TargetAttributes = {
 					D3FBA3E51C46524A000ECF85 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = F44XSCNJGN;
 					};
 				};
 			};
@@ -320,6 +337,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D3FBA3DD1C46524A000ECF85;
 			productRefGroup = D3FBA3E71C46524A000ECF85 /* Products */;
@@ -337,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3FBA3F91C46524A000ECF85 /* LaunchScreen.storyboard in Resources */,
+				D33C58F51CE35E7F005FA851 /* Localizable.strings in Resources */,
 				D3FBA3F61C46524A000ECF85 /* Assets.xcassets in Resources */,
 				D3FBA3F41C46524A000ECF85 /* Main.storyboard in Resources */,
 			);
@@ -426,17 +445,29 @@
 				D33EFDF41C48E678000FACB0 /* LoginViewController.m in Sources */,
 				D375BA691C59FBB2003B2AFE /* SHDevice+CoreDataProperties.m in Sources */,
 				D33A44D71C5E0B990065C488 /* RegisterTableViewController.m in Sources */,
+				D33C58F21CE35CEC005FA851 /* LocalizedString.m in Sources */,
 				D343BB071C4A288900D56638 /* DeviceListTableViewCell.m in Sources */,
+				D33C58FD1CE37EE9005FA851 /* ChangePWViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D33C58F71CE35E7F005FA851 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33C58F61CE35E7F005FA851 /* en */,
+				D33C58FA1CE35EA5005FA851 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D3FBA3F21C46524A000ECF85 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D3FBA3F31C46524A000ECF85 /* Base */,
+				D33C58F81CE35EA5005FA851 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -445,6 +476,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3FBA3F81C46524A000ECF85 /* Base */,
+				D33C58F91CE35EA5005FA851 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -538,11 +570,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SmartHome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bugong.SmartHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.utalife.WhereIsBaby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "13fedb84-76b3-4155-90e9-0b20ce8fcca8";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome/View/SmartHome-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -555,11 +590,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SmartHome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bugong.SmartHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.utalife.WhereIsBaby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "13fedb84-76b3-4155-90e9-0b20ce8fcca8";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome/View/SmartHome-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

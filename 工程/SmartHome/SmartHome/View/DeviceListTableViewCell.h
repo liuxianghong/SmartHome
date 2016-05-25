@@ -12,4 +12,5 @@
 @property (nonatomic,weak) IBOutlet UILabel *deviceIDLabel;
 @property (nonatomic,weak) IBOutlet UILabel *deviceNameLabel;
 @property (nonatomic,weak) IBOutlet UILabel *deviceStatusLabel;
+@property (nonatomic,weak) IBOutlet UIButton *renamebutton;
 @end

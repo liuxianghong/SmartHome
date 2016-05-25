@@ -58,7 +58,7 @@
     NSString *ssid = [WIFIUtil SSIDString];
     hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if ([ssid length]<1) {
-        hud.detailsLabelText = @"NO SSID";
+        hud.detailsLabelText = LocalizedStringTr(@"NO SSID");
         hud.mode = MBProgressHUDModeText;
         [hud hide:YES afterDelay:2.0];
         return;
@@ -67,7 +67,7 @@
     [[UDPSocketManager sharedManager] doSartLink:[WIFIUtil SSIDString] bssid:[WIFIUtil BSSIDString] password:self.textField.text ssidHiden:self.showSSIDSwitch.on];
     
     hud.dimBackground = YES;
-    hud.detailsLabelText = @"SmartLink touch is configuring,\nplease wait for a moment…";
+    hud.detailsLabelText = LocalizedStringTr(@"SmartLink touch is configuring,\nplease wait for a moment…");
     timer = [NSTimer scheduledTimerWithTimeInterval:50 target:self selector:@selector(cutdown) userInfo:nil repeats:YES];
 //    [self cutdown];
 }
@@ -78,7 +78,7 @@
         [timer invalidate];
         timer = nil;
     }
-    hud.detailsLabelText = @"SmarrLink touch is failure";
+    hud.detailsLabelText = LocalizedStringTr(@"SmarrLink touch is failure");
     hud.mode = MBProgressHUDModeText;
     [hud hide:YES afterDelay:2.0];
 }
@@ -88,7 +88,7 @@
         [timer invalidate];
         timer = nil;
     }
-    hud.detailsLabelText = [NSString stringWithFormat:@"SmarrLink touch is success,bssid = %@,InetAddress = %@",bssid,ipAdress];
+    hud.detailsLabelText = [NSString stringWithFormat:LocalizedStringTr(@"SmarrLink touch is success,bssid = %@,InetAddress = %@"),bssid,ipAdress];
     hud.mode = MBProgressHUDModeText;
     [hud hide:YES afterDelay:3.0];
 }

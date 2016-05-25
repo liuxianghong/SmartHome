@@ -87,7 +87,7 @@
         // 2.格式化日期
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         if ([cmp1 day] == [cmp2 day]) { // 今天
-            formatter.dateFormat = @"今天 HH:mm";
+            formatter.dateFormat = NSLocalizedString(@"今天 HH:mm", nil);
         } else if ([cmp1 year] == [cmp2 year]) { // 今年
             formatter.dateFormat = @"MM-dd HH:mm";
         } else {
@@ -96,9 +96,9 @@
         NSString *time = [formatter stringFromDate:lastUpdatedTime];
         
         // 3.显示日期
-        self.lastUpdatedTimeLabel.text = [NSString stringWithFormat:@"最后更新：%@", time];
+        self.lastUpdatedTimeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"最后更新：%@", nil), time];
     } else {
-        self.lastUpdatedTimeLabel.text = @"最后更新：无记录";
+        self.lastUpdatedTimeLabel.text = NSLocalizedString(@"最后更新：无记录", nil);
     }
 }
 
@@ -108,9 +108,9 @@
     [super prepare];
     
     // 初始化文字
-    [self setTitle:MJRefreshHeaderIdleText forState:MJRefreshStateIdle];
-    [self setTitle:MJRefreshHeaderPullingText forState:MJRefreshStatePulling];
-    [self setTitle:MJRefreshHeaderRefreshingText forState:MJRefreshStateRefreshing];
+    [self setTitle:NSLocalizedString(MJRefreshHeaderIdleText, nil) forState:MJRefreshStateIdle];
+    [self setTitle:NSLocalizedString(MJRefreshHeaderPullingText, nil)  forState:MJRefreshStatePulling];
+    [self setTitle:NSLocalizedString(MJRefreshHeaderRefreshingText, nil)  forState:MJRefreshStateRefreshing];
 }
 
 - (void)placeSubviews

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "User.h"
+#import "LocalizedString.h"
 
 @interface UserInfo : NSObject
 + (UserInfo *)sharedManager;

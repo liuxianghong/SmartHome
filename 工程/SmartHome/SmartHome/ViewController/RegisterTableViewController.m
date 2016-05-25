@@ -14,8 +14,8 @@
 @interface RegisterTableViewController () <UDPSocketScanfDelegate>
 @property (nonatomic,weak) IBOutlet UITextField *userNameField;
 @property (nonatomic,weak) IBOutlet UITextField *userPWField;
-@property (nonatomic,weak) IBOutlet UITextField *userPhoneField;
-@property (nonatomic,weak) IBOutlet UITextField *userEmailField;
+//@property (nonatomic,weak) IBOutlet UITextField *userPhoneField;
+//@property (nonatomic,weak) IBOutlet UITextField *userEmailField;
 @property (nonatomic,weak) IBOutlet UITextField *userDeviceIDField;
 @property (nonatomic,weak) IBOutlet UITextField *userDevicePWField;
 @property (nonatomic,weak) IBOutlet UIActivityIndicatorView *activity;
@@ -56,45 +56,45 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if (self.userNameField.text.length < 1) {
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"please enter user name";
+        hud.detailsLabelText = LocalizedStringTr(@"please enter user name");
         [hud hide:YES afterDelay:1.5f];
         return;
     }
     if (self.userPWField.text.length < 1) {
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"please enter password";
+        hud.detailsLabelText = LocalizedStringTr(@"please enter password");
         [hud hide:YES afterDelay:1.5f];
         return;
     }
-    if (self.userPhoneField.text.length < 1) {
-        hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"please enter phone number";
-        [hud hide:YES afterDelay:1.5f];
-        return;
-    }
-    if (self.userEmailField.text.length < 1) {
-        hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"please enter email";
-        [hud hide:YES afterDelay:1.5f];
-        return;
-    }
+//    if (self.userPhoneField.text.length < 1) {
+//        hud.mode = MBProgressHUDModeText;
+//        hud.detailsLabelText = LocalizedStringTr(@"please enter phone number");
+//        [hud hide:YES afterDelay:1.5f];
+//        return;
+//    }
+//    if (self.userEmailField.text.length < 1) {
+//        hud.mode = MBProgressHUDModeText;
+//        hud.detailsLabelText = LocalizedStringTr(@"please enter email");
+//        [hud hide:YES afterDelay:1.5f];
+//        return;
+//    }
     if (self.userDeviceIDField.text.length < 1) {
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"please enter device ID";
+        hud.detailsLabelText = LocalizedStringTr(@"please enter device ID");
         [hud hide:YES afterDelay:1.5f];
         return;
     }
     if (self.userDevicePWField.text.length < 1) {
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"please enter device password";
+        hud.detailsLabelText = LocalizedStringTr(@"please enter device password");
         [hud hide:YES afterDelay:1.5f];
         return;
     }
     
     NSDictionary *dic = @{@"userName" : self.userNameField.text,
                           @"passWord" : self.userPWField.text,
-                          @"mobile" : self.userPhoneField.text,
-                          @"email" : self.userEmailField.text,
+                          @"mobile" : @"13560731432",
+                          @"email" : @"123@qq.com",
                           @"deviceID" : @([self.userDeviceIDField.text longLongValue]),
                           @"devicePWD" : @([self.userDevicePWField.text longLongValue])
                           };
@@ -104,7 +104,12 @@
             NSString *str = root.stringValue;
             if ([str rangeOfString:@"FAIL:"].location == 0) {
                 hud.mode = MBProgressHUDModeText;
-                hud.detailsLabelText = str;
+                if ([str isEqualToString:@"FAIL:当前设备已分配给其它用户"]) {
+                    hud.detailsLabelText = LocalizedStringTr(str);
+                }
+                else{
+                    hud.detailsLabelText = LocalizedStringTr(@"Register Failure");
+                }
                 [hud hide:YES afterDelay:1.0f];
                 return ;
             }
@@ -116,7 +121,7 @@
             
         }
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"Register Failure";
+        hud.detailsLabelText = LocalizedStringTr(@"Register Failure");
         [hud hide:YES afterDelay:1.0f];
     } failure:^(NSError *error) {
         hud.mode = MBProgressHUDModeText;

@@ -14,7 +14,8 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import "TCPSocketManager.h"
 
-@interface LoginViewController ()
+
+@interface LoginViewController ()<UITextFieldDelegate>
 @property (nonatomic,weak) IBOutlet UITextField *usernameTextField;
 @property (nonatomic,weak) IBOutlet UITextField *passwordTextField;
 @end
@@ -24,8 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.usernameTextField.text = @"andyi";
-    self.passwordTextField.text = @"1234";
+    //self.usernameTextField.text = @"andyi";
+    //self.passwordTextField.text = @"1234";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,17 +34,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)configClick:(id)sender{
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.detailsLabelText = LocalizedStringTr(@"暂时不支持此功能");
+    [hud hide:YES afterDelay:1.0f];
+}
+
 -(IBAction)loginClick:(id)sender{
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
     if (self.usernameTextField.text.length == 0) {
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"请输入用户名";
+        hud.detailsLabelText = LocalizedStringTr(@"请输入用户名");
         [hud hide:YES afterDelay:1.0f];
         return;
     }
     if (self.passwordTextField.text.length == 0) {
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"请输入密码";
+        hud.detailsLabelText = LocalizedStringTr(@"请输入密码");
         [hud hide:YES afterDelay:1.0f];
         return;
     }
@@ -67,7 +76,7 @@
             
         }
         hud.mode = MBProgressHUDModeText;
-        hud.detailsLabelText = @"用户名或密码错误";
+        hud.detailsLabelText = LocalizedStringTr(@"用户名或密码错误");
         [hud hide:YES afterDelay:1.0f];
     } failure:^(NSError *error) {
         hud.mode = MBProgressHUDModeText;
@@ -77,6 +86,10 @@
     //[self performSegueWithIdentifier:@"deviceListIdentifier" sender:nil];
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 /*
 #pragma mark - Navigation
 

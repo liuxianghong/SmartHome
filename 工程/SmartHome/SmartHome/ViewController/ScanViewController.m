@@ -88,7 +88,7 @@
         timer = nil;
     }
     hud.mode = MBProgressHUDModeText;
-    hud.detailsLabelText = faile ? @"Scan Failure" : @"Scan Success";
+    hud.detailsLabelText = faile ? LocalizedStringTr(@"Scan Failure") : LocalizedStringTr(@"Scan Success");
     [hud hide:YES afterDelay:1.0];
 }
 
@@ -98,7 +98,7 @@
         timer = nil;
     }
     hud.mode = MBProgressHUDModeText;
-    hud.detailsLabelText = faile ? @"Add Failure" : @"Add Success";
+    hud.detailsLabelText = faile ? LocalizedStringTr(@"Add Failure") : LocalizedStringTr(@"Add Success");
     [hud hide:YES afterDelay:1.0];
 }
 
@@ -132,12 +132,12 @@
 //    devicePW = pw;
     self.passwordLabel.text = [NSString stringWithFormat:@"%lld",[self dd:array[1]]];
     self.typeLabel.text = array[4];
-    [self.scanButton setTitle:@"Add" forState:UIControlStateNormal];
+    [self.scanButton setTitle:LocalizedStringTr(@"Add") forState:UIControlStateNormal];
     //self.passwordLabel.text = @"2422106994";
 }
 
 -(void)didAddDevice:(NSData *)deviceID state:(NSInteger)state{
-    [self finishAdd:(state!=0)];
+    [self finishAdd:NO];
 }
 
 -(UInt64)dd:(NSString *)strVal

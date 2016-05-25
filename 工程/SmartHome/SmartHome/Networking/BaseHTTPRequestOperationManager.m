@@ -10,9 +10,10 @@
 #import <JSONKit.h>
 #import "NSString+scisky.h"
 #import <GDataXML-HTML/GDataXMLNode.h>
+#import "LocalizedString.h"
 
-#define kErrorEmpty @"服务器返回错误"
-#define kErrorConnect @"无法连接到服务器"
+#define kErrorEmpty LocalizedStringTr(@"服务器返回错误")
+#define kErrorConnect LocalizedStringTr(@"无法连接到服务器")
 #define baseURL @"http://cloud.ai-thinker.com/service/s.asmx/"
 #define resourceSeeURL @"http://121.42.10.232/utalifeResource/"
 #define resourceURL @"http://121.42.10.232/utalifeResource/image?image="
